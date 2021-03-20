@@ -25,8 +25,24 @@
 
 4. **Visualizations.** 
    <div align="center">
-      <img src="227092.jpg" width="35%" style="margin:10px;">
-      <img src="227092-nms.png" width="35%" style="margin:10px;">
+      <img src="101087_raw.png" width="35%" style="margin:10px;">
+      <img src="101087_part1.png" width="35%" style="margin:10px;">
+      <img src="101087_gf.png" width="35%" style="margin:10px;">
+      <img src="101087_nms.png" width="35%" style="margin:10px;">
+   </div>
+
+   <div align="center">
+      <img src="14037_raw.png" width="35%" style="margin:10px;">
+      <img src="14037_part1.png" width="35%" style="margin:10px;">
+      <img src="14037_gf.png" width="35%" style="margin:10px;">
+      <img src="14037_nms.png" width="35%" style="margin:10px;">
+   </div>
+
+   <div align="center">
+      <img src="167062_raw.png" width="35%" style="margin:10px;">
+      <img src="167062_part1.png" width="35%" style="margin:10px;">
+      <img src="167062_gf.png" width="35%" style="margin:10px;">
+      <img src="167062_nms.png" width="35%" style="margin:10px;">
    </div>
 
 5. **Bells and Whistles.** 

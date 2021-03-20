@@ -62,43 +62,43 @@ def compute_edges_dxdy(I):
   """Returns the norm of dx and dy as the edge response function."""
   I = cv2.cvtColor(I, cv2.COLOR_BGR2GRAY)
 
-  I = gaussian_filter(I, sigma = 1.4)
+  # I = gaussian_filter(I, sigma = 1.4)
   
   I = I.astype(np.float32)/255.
   
 
   
-  dx = signal.convolve2d(I, np.array([[-1, 0, 1]]), mode='same', boundary = 'wrap')
-  dy = signal.convolve2d(I, np.array([[-1, 0, 1]]).T, mode='same', boundary = 'wrap')
+  dx = signal.convolve2d(I, np.array([[-1, 0, 1]]), mode='same')
+  dy = signal.convolve2d(I, np.array([[-1, 0, 1]]).T, mode='same')
   mag = np.hypot(dx, dy)
 
-  mag = (mag - mag.min())/(mag.max() - mag.min())
+  # mag = (mag - mag.min())/(mag.max() - mag.min())
   
 
-  angle = np.arctan2(-dy, dx)
+  # angle = np.arctan2(-dy, dx)
 
-  highThresh = mag.max()*.09
-  lowThresh = highThresh*0.1
+  # highThresh = mag.max()*.09
+  # lowThresh = highThresh*0.1
 
-  mag = nms(mag, angle, lowThresh)
+  # mag = nms(mag, angle, lowThresh)
 
-  mag = (mag - mag.min())/(mag.max() - mag.min())
+  # mag = (mag - mag.min())/(mag.max() - mag.min())
 
-  highThresh = mag.max()*.15
-  lowThresh = highThresh*0.1
-
-
-  mag[mag<lowThresh] = 0
+  # highThresh = mag.max()*.15
+  # lowThresh = highThresh*0.1
 
 
-  mag = hys(mag, highThresh, lowThresh)
+  # mag[mag<lowThresh] = 0
+
+
+  # mag = hys(mag, highThresh, lowThresh)
 
   # highThresh = mag.max()*.15
   # lowThresh = highThresh*0.1
 
   # mag[mag<highThresh] = 0
   
-  
+  mag/1.5
   
   mag = mag * 255.
   mag = np.clip(mag, 0, 255)
