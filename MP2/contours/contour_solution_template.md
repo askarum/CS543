@@ -25,24 +25,24 @@
 
 4. **Visualizations.** 
    <div align="center">
-      <img src="101087_raw.png" width="35%" style="margin:10px;">
-      <img src="101087_part1.png" width="35%" style="margin:10px;">
-      <img src="101087_gf.png" width="35%" style="margin:10px;">
-      <img src="101087_nms.png" width="35%" style="margin:10px;">
+      <img src="101087_raw.jpg" width="25%">
+      <img src="101087_part1.png" width="25%">
+      <img src="101087_gf.png" width="25%">
+      <img src="101087_nms.png" width="25%">
    </div>
 
    <div align="center">
-      <img src="14037_raw.png" width="35%" style="margin:10px;">
-      <img src="14037_part1.png" width="35%" style="margin:10px;">
-      <img src="14037_gf.png" width="35%" style="margin:10px;">
-      <img src="14037_nms.png" width="35%" style="margin:10px;">
+      <img src="14037_raw.jpg" width="25%">
+      <img src="14037_part1.png" width="25%">
+      <img src="14037_gf.png" width="25%">
+      <img src="14037_nms.png" width="25%">
    </div>
 
    <div align="center">
-      <img src="167062_raw.png" width="35%" style="margin:10px;">
-      <img src="167062_part1.png" width="35%" style="margin:10px;">
-      <img src="167062_gf.png" width="35%" style="margin:10px;">
-      <img src="167062_nms.png" width="35%" style="margin:10px;">
+      <img src="167062_raw.jpg" width="25%" >
+      <img src="167062_part1.png" width="25%">
+      <img src="167062_gf.png" width="25%">
+      <img src="167062_nms.png" width="25%">
    </div>
 
 5. **Bells and Whistles.** 
