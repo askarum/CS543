@@ -2,39 +2,40 @@
 
 **NOTE:** All values and figures in this template are examples that you will need to replace with your own results
 
-1. **Method Description.** *TODO*: Describe the different mehtods and their key implementation detials.
+1. **Method Description.** In Part 1, I had to pad the image to get rid of the artifacts at the edge. For that purpose I used wrapping at boundaries.
+   In Part 2, I did gaussian filtering to smooth the image. I tried different $\sigma$ values, the best result achieved at $\sigma=1.4$
+   In Part 3, I implmented non-maximum suppression. If the magnitude of the gradient of pixel was greater than certain threshold, I looked at the values in the direction of the gradient. If the pixel value was smaller than those in the direction of the gradient I suppress the pixel.
 
-2. **Precision Recall Plot.** *TODO*: Use [contour_plot.py](contours/../contour_plot.py) to add curves for the different methods that you implemented into a single plot.
+
+2. **Precision Recall Plot.**  Use [contour_plot.py](contours/../contour_plot.py) to add curves for the different methods that you implemented into a single plot.
    
    <div align="center">
       <img src="plot.png" width="60%">
    </div>
 
-3. **Results Table.** *TODO*: Present the performance metrics for each implementation part in a table format
+3. **Results Table.**  Present the performance metrics for each implementation part in a table format
 
    | Method | overall max F-score | average max F-score | AP | Runtime (seconds) |
    | ----------- | --- | --- | ---  | --- |
    | Initial implementation | 0.52 | 0.56 | 0.43 | 0.008 |
-   | Warm-up [remove boundary artifacts | | | | |
-   | Smoothing | | | | |
-   | Non-max suppression | | | | 
-   | Test set numbers of best model [From gradescope] | | | |
+   | Warm-up [remove boundary artifacts | 0.53 | 0.56 | 0.46 | 0.015 |
+   | Smoothing | 0.56 | 0.58 | 0.42 | 0.018 |
+   | Non-max suppression | 0.60 | 0.62 | 0.59 | 0.59 |
+   | Test set numbers of best model [From gradescope] | 0.60 | 0.62 | 0.59 | 0.59 |
 
-4. **Visualizations.** *TODO:* Include visualization on 3 images (before and after the contour detection). Comment on
-   your observations, where does your contour detector work well, where it doesn't and why? you can are also add visualizations of your own images.
+4. **Visualizations.** 
    <div align="center">
       <img src="227092.jpg" width="35%" style="margin:10px;">
       <img src="227092-nms.png" width="35%" style="margin:10px;">
    </div>
 
-5. **Bells and Whistles.** *TODO*: Include details of the bells and whistles that you
-   tried here.
+5. **Bells and Whistles.** 
 
-   *TODO*: Present the performance metrics for the bells and whistles in a table format
+   I tried implementing hysterisis. If the value of the pixel was smaller than the lower threshold, suppress it. If the edge is weak and one of the neighbouring pixels has a value grater than higher threshold, ransform weak edge to the strong edge. However, my results after hystersis were slightly worse than those after nms. 
    
    | Method | overall max F-score | average max F-score | AP | Runtime (seconds) |
    | ----------- | --- | --- | ---  | --- |
-   | Best base Implementation (from above) | | | | 
-   | Bells and whistle (1) [extra credit]) | | | | 
+   | Best base Implementation (from above) | 0.60 | 0.62 | 0.59 | 0.59 |
+   | Bells and whistle (1) [extra credit]) | 0.60 | 0.61 | 0.54 | 1.61
    | Bells and whistle (2) [extra credit]) | | | |
    | Bells and whistle (n) [extra credit]) | | | |
