@@ -6,9 +6,9 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 
 FLAGS = flags.FLAGS
-flags.DEFINE_list("dirs", ["output/demo/alpha_0.05_sigma_0.8", "output/demo/alpha_0.06_sigma_0.7"], 
+flags.DEFINE_list("dirs", ["output/no_nms", "output/nms", "output/6_005_16", "output/6_006_08"], 
                   "List of directories to read metrics from")
-flags.DEFINE_list("names", ["alpha_0.05_sigma_0.8", "alpha_0.06_sigma_0.7"], 
+flags.DEFINE_list("names", ["no_nms", "with_nms", "sigma_0.8", "sigma_1.6"], 
                   "Legends")
 flags.DEFINE_string("out_file_name", "plot",
                     "File to save plots to")

@@ -3,7 +3,7 @@
 **NOTE:** All values and figures in this template are examples that you will need to replace with your own results
 
 1. **Method Description.** In Part 1, I had to pad the image to get rid of the artifacts at the edge. For that purpose I used wrapping at boundaries.
-   In Part 2, I did gaussian filtering to smooth the image. I tried different $\sigma$ values, the best result achieved at $\sigma=1.4$
+   In Part 2, I did gaussian filtering to smooth the image. I tried different $`\sigma`$ values, the best result achieved at $`\sigma`$=1.4
    In Part 3, I implmented non-maximum suppression. If the magnitude of the gradient of pixel was greater than certain threshold, I looked at the values in the direction of the gradient. If the pixel value was smaller than those in the direction of the gradient I suppress the pixel.
 
 
