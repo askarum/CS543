@@ -1,8 +1,8 @@
-## Corner Detection - Solution Template
+## Corner Detection
 
 **NOTE:** All values and figures in this template are examples that you will need to replace with your own results
 
-1. **Method Description.** *TODO*: Describe the different mehtods and their key implementation detials.
+1. **Method Description.** In this task I implemented Harris corner detection. First step was to compute derivatives of the images. Then second moment od the derivatives were computed. I used Gaussian weights and convoluted through Ixx, Iyy and Ixy to compute response values. I used non-maximum supression to get rid of weak corners. Final results are shown below.
 
 2. **Precision Recall Plot.** 
 
@@ -10,7 +10,7 @@
       <img src="plot.png" width="60%">
    </div>
 
-3. **Results Table.** *TODO*: Present the performance metrics for each implementation part in a table format
+3. **Results Table.** Performance metrics
 
    | Method | Average Precision | Runtime |
    | ------ | ----------------- | ------- |
@@ -25,18 +25,18 @@
    Hyper-parameters (2): $`\sigma`$ = 0.8, $`\alpha`$ = 0.06'
 
 
-4. **Visualizations.** Include visualization on 3 images. 
+4. **Visualizations.** Visualization on 3 images. 
 
    <div align="center">
-      <img src="output/demo/vis/37073_vis.png" width="100%">
+      <img src="demo/vis/37073_vis.png" width="100%">
    </div>
 
    <div align="center">
-      <img src="output/demo/vis/draw_cube_17_vis.png" width="100%">
+      <img src="demo/vis/draw_cube_17_vis.png" width="100%">
    </div>
 
    <div align="center">
-      <img src="output/demo/vis/5904776_vis.png" width="100%">
+      <img src="demo/vis/5904776_vis.png" width="100%">
    </div>
 
 My corner detector is not perfect in detecting corners in cube image. It might be due to the background of image. It has some sharp transitions. I think detector performed well in airplane image. It could have detected additional corners though. As for the last image, I think it has done great job.
