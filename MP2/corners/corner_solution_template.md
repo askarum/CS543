@@ -21,22 +21,22 @@
    | Hyper-parameters tried (2) | 0.59 | 0.9 |
    | Test set numbers of best model [From gradescope] | 0.59 | 0.9 |
 
-   Hyper-parameters (1): $`\sigma`$ = 1.6, $`\alpha`$ = 0.05'
-   Hyper-parameters (2): $`\sigma`$ = 0.8, $`\alpha`$ = 0.06'
+   Hyper-parameters (1): $`\sigma`$ = 1.6, $\alpha$ = 0.05'
+   Hyper-parameters (2): $`\sigma`$ = 0.8, $\alpha$ = 0.06'
 
 
 4. **Visualizations.** Visualization on 3 images. 
 
    <div align="center">
-      <img src="demo/vis/37073_vis.png" width="100%">
+      <img src="37073_vis.png" width="100%">
    </div>
 
    <div align="center">
-      <img src="demo/vis/draw_cube_17_vis.png" width="100%">
+      <img src="draw_cube_17_vis.png" width="100%">
    </div>
 
    <div align="center">
-      <img src="demo/vis/5904776_vis.png" width="100%">
+      <img src="5904776_vis.png" width="100%">
    </div>
 
 My corner detector is not perfect in detecting corners in cube image. It might be due to the background of image. It has some sharp transitions. I think detector performed well in airplane image. It could have detected additional corners though. As for the last image, I think it has done great job.
