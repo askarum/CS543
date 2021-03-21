@@ -1,6 +1,6 @@
 ## Corner Detection
 
-**NOTE:** All values and figures in this template are examples that you will need to replace with your own results
+
 
 1. **Method Description.** In this task I implemented Harris corner detection. First step was to compute derivatives of the images. Then second moment od the derivatives were computed. I used Gaussian weights and convoluted through Ixx, Iyy and Ixy to compute response values. I used non-maximum supression to get rid of weak corners. Final results are shown below.
 
@@ -22,6 +22,7 @@
    | Test set numbers of best model [From gradescope] | 0.59 | 0.9 |
 
    Hyper-parameters (1): $`\sigma`$ = 1.6, $\alpha$ = 0.05'
+
    Hyper-parameters (2): $`\sigma`$ = 0.8, $\alpha$ = 0.06'
 
 

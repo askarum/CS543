@@ -1,6 +1,6 @@
 ## Contour Detection
 
-**NOTE:** All values and figures in this template are examples that you will need to replace with your own results
+
 
 1. **Method Description.** In Part 1, I had to pad the image to get rid of the artifacts at the edge. For that purpose I used wrapping at boundaries.
 
